@@ -1,4 +1,4 @@
-# Market-Basket-Analysis
+# Market-Basket-Analysis in Python
 In this project I am going to analyze Market-Basket datasets to find the frequent itemsets and also generate some rules which is a key factor for Market-Basket analysis.
 
 To have an overall overview, first take a quick look at what Market-Basket analysis is and how it is used in real life applications.
