@@ -1,3 +1,8 @@
+# Market Basket Analysis
+# By: Pouya Hosseinzadeh
+# Time: August 2nd, 2020
+
+
 # for basic operations
 import numpy as np
 import pandas as pd
