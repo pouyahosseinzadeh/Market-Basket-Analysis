@@ -1,7 +1,7 @@
 
 # coding: utf-8
 
-# In[4]:
+# In[1]:
 
 
 # Market-Basket-Analysis
@@ -26,7 +26,7 @@ from mlxtend.preprocessing import TransactionEncoder
 import os
 
 
-# In[5]:
+# In[2]:
 
 
 # importing the two datasets and merging them based on the same column
@@ -35,7 +35,7 @@ df2 = pd.read_csv(r"D:\DRIVE D\daneshgah.arshad\UNISIENA\Advanced database syste
 df = df1.merge(df2, on="COD_MKT_ID")
 
 
-# In[6]:
+# In[3]:
 
 
 # checking the head of the data
@@ -49,7 +49,7 @@ df.head()
 df.tail()
 
 
-# In[21]:
+# In[5]:
 
 
 # for simplicity we prefer to work on 10000 transactions rather than nearly 1 million which fails the computer RAM
@@ -70,7 +70,7 @@ print(lst[0:3])
 print(len(lst))
 
 
-# In[20]:
+# In[7]:
 
 
 # a good tool for data visualization to see the most popular items in SEGMENTO column
@@ -82,7 +82,7 @@ plt.title('Most Popular Items',fontsize = 20)
 plt.show()
 
 
-# In[14]:
+# In[8]:
 
 
 # for Apriori algorithm, the dataset has to be one-hot encoded
@@ -92,7 +92,7 @@ data = pd.DataFrame(te_lst,columns=te.columns_)
 data
 
 
-# In[15]:
+# In[9]:
 
 
 # Apriori Algorithm finds the frequent itemsets
@@ -100,7 +100,7 @@ frequent_items= apriori(data, use_colnames=True, min_support=0.03)
 frequent_items.head()
 
 
-# In[16]:
+# In[10]:
 
 
 # Association rules function is used which can take any metric such as 'lift' and also the minimum threshold set to 1
@@ -110,7 +110,7 @@ rules.consequents = rules.consequents.apply(lambda x: next(iter(x)))
 rules
 
 
-# In[22]:
+# In[11]:
 
 
 # a network graph to check association between antecedents and consequents
